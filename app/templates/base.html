@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} - jiawei's blog</title>
+    {% else %}
+    <title>welcome!</title>
+    {% endif %}
+</head>
+<body>
+      <div>jiawei's blog : <a href="/index">Home</a></div>
+      {% block content %}{% endblock %}
+</body>
+</html>
